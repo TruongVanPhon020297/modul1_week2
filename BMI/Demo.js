@@ -1,19 +1,26 @@
-let Weight = prompt("Input Weight");
-let Height = prompt("Input Height");
-let Weight_Value = parseFloat(Weight);
-let Height_Value = parseFloat(Height);
-let BMI = Weight_Value / (Math.pow(Height_Value,2));
-if(BMI < 18.5){
-    alert("Underweight");
-}else {
-    if(BMI >= 18.5 && BMI < 25.0){
-        alert("Normal");
-    }else {
-        if(BMI >= 25.0 && BMI < 30.0){
-            alert("Overweight");
+var Month_Values = document.getElementById("Month").value;
+function Show_Month() {
+    alert(Month_Values);
+    /* if(Month_Value > 12 && Month_Value < 1){
+        document.getElementById("Result").innerHTML = "Tháng nhập vào không đúng, tháng từ 1 -> 12";
+    }else{
+        switch (Month_Value) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                document.getElementById("Result").innerHTML = "Tháng "+Month_Value+" có 31 Ngày"
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                document.getElementById("Result").innerHTML = "Tháng "+Month_Value+" có 30 Ngày"
+                break;
+            default:
         }
-        else{
-            alert("Obese");
-        }
-    }
+    } */
 }
