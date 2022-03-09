@@ -11,7 +11,9 @@
         let Num_1 = parseInt(prompt("Nhập vào số thứ nhất"));
         let Num_2 = parseInt(prompt("Nhập vào số thứ hai"));
         let Num_3 = parseInt(prompt("Nhập vào số thứ ba"));
-        let Max
+        let Max = Num_1;
+        (Max >= Num_2) ? ((Max > Num_3) ? Max : Max = Num_3) : ((Num_2 > Num_3)? Max = Num_2 : Max = Num_3);
+        alert("Số lớn nhất trong ba số là : " + Max);
     </script>
 </body>
 </html>

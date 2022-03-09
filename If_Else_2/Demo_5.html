@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Point_1 = parseFloat(prompt("Nhập vào điểm vào điểm bài kiểm tra"));
+        let Point_2 = parseFloat(prompt("Nhập vào điểm vào điểm thi giữa kỳ"));
+        let Point_3 = parseFloat(prompt("Nhập vào điểm vào điểm thi cuối kỳ"));
+        let Sum_Point = (Point_1 + Point_2 + Point_3) / 3;
+        (Point_1 < 0 || Point_2 < 0 || Point_3 < 0) ? alert("Điểm nhập vào phải lớn hơn 0") : ((Sum_Point < 5)?alert("Loại Yếu"):(Sum_Point >= 5 && Sum_Point < 7) ? alert("Loại trung bình") : (Sum_Point >= 7 && Sum_Point < 9) ? alert("Loại khá") : alert("Loại giỏi"));
+    </script>
+</body>
+</html>
