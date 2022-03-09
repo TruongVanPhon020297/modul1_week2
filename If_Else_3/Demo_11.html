@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Money = parseFloat(prompt("Nhập vào số tiền gửi"));
+        let Rate = parseFloat(prompt("Nhập vào Lãi suất %/năm"));
+        let Month_Number = parseFloat(prompt("Nhập vào số tháng gửi"));
+        let Money_Sum;
+        if(Money < 0){
+            alert("Số tiền gửi phải lớn hơn 0");
+        }else{
+            if(Rate < 0){
+                alert("Lãi suất phải lớn hơn 0");
+            }else{
+                Money_Sum = Money * (Rate/100) * (Month_Number*30);
+                alert("Tổng tiền lãi là : " + Money_Sum);
+            }
+        }
+    </script>
+</body>
+</html>

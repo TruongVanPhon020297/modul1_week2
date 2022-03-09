@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Number_A = parseFloat(prompt("Nhập vào số a"));
+        let Number_B = parseFloat(prompt("Nhập vào số b"));
+        let Number_C = parseFloat(prompt("Nhập vào số c"));
+        let Delta = Math.pow(Number_B,2) - 4*(Number_A*Number_C);
+        let x1,x2;
+        if(Number_A == 0){
+            alert("Phương trình trở thành phương trình bậc nhất");
+            let Aquation;
+            if(Number_B == 0 && Number_C == 0){
+                alert("Phương trình bậc nhất có vô số nghiệm");
+            }else{
+                if(Number_B == 0 && Number_C != 0){
+                    alert("Phương trình bậc nhất vô nghiệm");
+                }else{
+                    Aquation = -Number_C/Number_B;
+                    alert("Phương trình có nghiệm duy nhất là : " + Aquation);
+                }
+            }
+        }else{
+            if(Delta < 0){
+                alert("Phương trình vô nghiệm");
+            }else{
+                if(Delta == 0){
+                    alert("Phương trình có nghiệm kép : x1 = x2 = " +(-Number_B/(2*Number_A)));
+                }else{
+                    x1 = ((-Number_B + Math.sqrt(Delta))/(2*Number_A));
+                    x2 = ((-Number_B - Math.sqrt(Delta))/(2*Number_A));
+                    alert("Phương trình có hai nghiệm phân biệt x1 = " + x1 +" x2 = " + x2);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Kwh = parseFloat(prompt("Nhập vào số Kwh"));
+        function Math_Money(Kw,Price){
+            return (Kw * Price);
+        }
+        let Money;
+        if(Kwh <= 0){
+            alert("Số Kwh phải lớn hơn 0");
+        }else {
+            if(Kwh > 0 && Kwh <= 50){
+                alert("Sản lượng điện của bạn nằm từ 0 -> 50 nên giá 1678/kwh, tổng tiền là " +(Math_Money(Kwh,1678)));
+            }else{
+                if(Kwh > 50 && Kwh <= 100){
+                    alert("Sản lượng điện của bạn nằm từ 51 -> 100 nên giá 1734/kwh, tổng tiền là " +(Math_Money(Kwh,1734)));
+                }else{
+                    if(Kwh > 100 && Kwh <= 200){
+                        alert("Sản lượng điện của bạn nằm từ 101 -> 200 nên giá 2014/kwh, tổng tiền là " +(Math_Money(Kwh,2014)));
+                    }else{
+                        if(Kwh > 200 && Kwh <= 300){
+                            alert("Sản lượng điện của bạn nằm từ 201 -> 300 nên giá 2536/kwh, tổng tiền là " +(Math_Money(Kwh,2536)));
+                        }else{
+                            if(Kwh > 300 && Kwh <= 400){
+                                alert("Sản lượng điện của bạn nằm từ 301 -> 400 nên giá 2834/kwh, tổng tiền là " +(Math_Money(Kwh,2834)));
+                            }else{
+                                alert("Sản lượng điện của bạn lớn hơn 400 nên giá 2927/kwh, tổng tiền là " +(Math_Money(Kwh,2927)));
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

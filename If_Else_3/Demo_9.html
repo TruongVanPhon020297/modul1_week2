@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Number_A = parseFloat(prompt("Nhập vào cạnh thứ nhất"));
+        let Number_B = parseFloat(prompt("Nhập vào cạnh thứ hai"));
+        let Number_C = parseFloat(prompt("Nhập vào cạnh thứ ba"));
+        (Number_A < 0 || Number_B < 0 || Number_C < 0) ? alert("Cạnh phải lớn hơn 0") :(((Number_A + Number_B) > Number_C) && ((Number_B + Number_C) > Number_A) && ((Number_A + Number_C) >Number_B)) ? alert("Đây là ba cạnh của tam giác") : alert("Đây không phải là ba cạnh của một tam giác");
+    </script>
+</body>
+</html>
