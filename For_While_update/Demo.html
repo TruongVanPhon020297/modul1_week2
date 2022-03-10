@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let table_value = "<table border='1' width='50%' cellspacing='0' cellpadding='3'>";
+        let i,j;
+        for(i = 1 ; i <= 8 ; i++){
+            table_value += "<tr>";
+            for(j = 1 ; j <= 8 ; j++){
+                if((i % 2) == 0){
+                    if((j % 2) == 0){
+                        table_value += "<td style='background:black ;height: 70px;width: 100px;'></td>";
+                    }else {
+                        table_value += "<td style='background:while ;height: 70px;width: 100px;'></td>";
+                    }
+                }else {
+                    if((j % 2) != 0){
+                        table_value += "<td style='background:black ;height: 70px;width: 100px;'></td>";
+                    }else {
+                        table_value += "<td style='background:while ;height: 70px;width: 100px;'></td>";
+                    }
+                }
+
+
+
+
+
+
+
+                /* if(((j % 2) == 0) && (i % 2 ) == 1){
+                    table_value += "<td style='background:black ;'>" + i * j + "</td>";
+                }else{
+                    table_value += "<td style='background:white ;'>" + i * j + "</td>";
+                } */
+            }
+            table_value += "</tr>"
+        }
+        table_value += "</table>";
+        document.write(table_value);
+    </script>
+</body>
+</html>
